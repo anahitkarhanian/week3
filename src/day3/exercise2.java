@@ -11,7 +11,6 @@ public class exercise2 {
     }
 
     public static char getChar(String str, int index){
-        char symbol = str.charAt(index);
-        return symbol;
+        return str.charAt(index);
     }
 }

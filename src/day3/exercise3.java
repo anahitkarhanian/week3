@@ -6,7 +6,7 @@ public class exercise3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String string = scanner.next();
-        char symbol = 'a';
+        char symbol = scanner.next().charAt(0);
         System.out.println(checkChar(string, symbol));
     }
 

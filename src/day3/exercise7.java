@@ -14,12 +14,13 @@ public class exercise7 {
         StringBuilder stringBuilder = new StringBuilder(str.toUpperCase());
 
        for (int i = 0; i < str.length(); i++) {
-           if((int)stringBuilder.toString().charAt(i) + n > 90){
-                char newChar = (char) ((stringBuilder.toString().charAt(i) + n )% 90 + 65);
+           int offset = stringBuilder.toString().charAt(i) + n;
+           if(offset > 90){
+                char newChar = (char) (offset % 90 + 65);
                 String newStr = Character.toString(newChar);
                 stringBuilder.replace(i,i+1,newStr);
             } else {
-               char newChar = (char) (stringBuilder.toString().charAt(i) + n );
+               char newChar = (char) offset;
                 String newStr = Character.toString(newChar);
                 stringBuilder.replace(i, i + 1, newStr);
             }

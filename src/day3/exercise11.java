@@ -12,6 +12,7 @@ public class exercise11 {
 
     public static void bin2D(String str){
         boolean check = true;
+
         for (int i = 0; i < str.length(); i++) {
             if (!(str.charAt(i) == '0' || str.charAt(i) == '1')) {
                 check = false;
