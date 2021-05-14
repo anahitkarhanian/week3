@@ -14,6 +14,7 @@ public class recursive2iNastijan {
     public static int recursia(int a,int n){
         if (n == 0){
             return 1;
-        } else return a * recursia(a,n -1);
+        }
+        return a * recursia(a,n -1);
     }
 }
